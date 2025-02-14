@@ -1,0 +1,227 @@
+.container {
+  min-height: 100vh;
+  background-color: #fff5f7;
+}
+
+/* Navigation Styles */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-wrapper:hover {
+  background-color: #f8f8f8; /* Subtle background change on hover */
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Logo slightly enlarges on hover */
+}
+
+.business-name {
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e84393;
+  transform: translateY(-2px); /* Link slightly moves up on hover */
+}
+
+.mobile-menu-btn {
+  display: none;
+}
+
+.mobile-menu-btn button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu-btn button:hover {
+  transform: rotate(90deg); /* Button rotates on hover */
+}
+
+/* Hero Section */
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+.hero-wrapper {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.hero-wrapper:hover {
+  transform: translateY(-10px); /* Hero section shifts up on hover */
+}
+
+.hero-image {
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image img:hover {
+  transform: scale(1.05); /* Image zooms in slightly on hover */
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: opacity 0.3s ease;
+}
+
+.hero-content:hover {
+  opacity: 0.9; /* Slight opacity change when hovered */
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.hero-content h1:hover {
+  color: #e84393; /* Title changes color on hover */
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.button-group {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary {
+  background-color: #e84393;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d23d82;
+  transform: translateY(-4px); /* Button raises slightly on hover */
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #e84393;
+  padding: 12px 24px;
+  border: 2px solid #e84393;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #fff5f7;
+  transform: translateY(-4px); /* Button raises slightly on hover */
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-menu-btn button {
+    font-size: 32px;
+    color: #e84393;
+  }
+
+  .hero-wrapper {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .button-group {
+    justify-content: center;
+  }
+
+ 
+  }
+
+  .mobile-menu.open {
+    display: block;
+  }
+
+  .mobile-menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+  }
+
+  .mobile-menu a:hover {
+    color: #e84393;
+  }
+}
